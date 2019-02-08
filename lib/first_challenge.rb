@@ -17,8 +17,8 @@ def first_challenge
   #your code here
   contacts.each do |k, v|
       v.each do |k2, v2|
-        binding.pry
         if k2 == :favorite_icecream_flavors
+          binding.pry
           v2.delete_if {|x| x == "strawberry"}
         end
       end
